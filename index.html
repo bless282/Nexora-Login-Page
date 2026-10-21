@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Digital Banking Portal</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<!--LOGIN CARD-->
+	<main class="page">
+		<div class="logo-container">
+			<img src="nexora logo.png">
+		</div>
+		<h1>NEXORA DIGITAL BANK</h1>
+		<p>Banking Beyond Boundaries</p>
+		<span class="badge">Digital Banking Portal</span>
+
+		<section class="Login-card">
+			<h2>Welcome Back!</h2>
+			<p class="sub"> Log in to access your bank account</p>
+
+			<form id="LoginForm">
+				<label for="LoginEmail">Email Address</label>
+				<div class="input-group">
+					<span class="input-icon">
+						<i class="fa-solid fa-envelope"></i>
+					</span>
+					<input type="Email" name="LoginEmail" placeholder="myemail@gmail.com" required>
+				</div>
+
+				<label for="Password">Password</label>
+				<div class="input-group">
+					<span class="input-icon">
+						<i class="fa-solid fa-lock"></i>
+					</span>
+					<input type="Password" name="Password" placeholder="Input password" required>
+					<button type="button" id="togglePassword" class="eye">
+						<i class="fa-solid fa-eye"></i>
+					</button>
+				</div>
+				
+				<button type="submit" class="sign-in-button">
+					<i class="fa-solid fa-right-to-bracket"></i>Sign In
+				</button>
+			</form>
+
+			<a href="#" class="forgot" id="forgotPassword">
+			<i class="fa-solid fa-key"></i>Forgot Your Password? 
+			</a>
+
+			<div class="divider">
+				<span>New to the site</span>
+			</div>
+
+			<div class="bottom-buttons">
+				<a href="#sign-up" class="Create-account" id="open-site">
+					<i class="fa-solid fa-user-plus"></i>Create Account
+				</a>
+				<button type="button" class="Help-button" id="how-to-apply">
+					<i class="fa-solid fa-circle-question"></i>How To Apply
+				</button>
+			</div>
+		</section>
+	</main>
+
+
+<!--CREATE ACCOUNT-->
+    <div class="create-account-overlay" id="sign-up">
+    	<div class="modal-card">
+    		<a href="#"  class="close-icon" aria-label="Close">
+    			<i class="fa-solid fa-xmark"></i>
+    		</a> 
+    		<div class="modal-head">
+    			<h2>Create Account</h2>
+    			<p>Provide your details to receive a temporary password.</p>
+    		</div>
+
+    		<form id="Sign-up-form">
+    			<div class="form-body">
+    				<label for="surname">Surname</label>
+    				<div class="input-group">
+    					<i class="fa-solid fa-user"></i>
+    					<input type="text" id="Surname" placeholder="surname" required>
+    				</div>
+
+    				<label for="other-names">Other Names</label>
+    				<div class="input-group">
+    					<i class="fa-solid fa-use-pen"></i>
+    					<input type="text" id="other-names" placeholder="Other names" required>
+    				</div>
+
+    				<label for="phone-number">Phone Number</label>
+    				<div phone-box>
+    					<select id="country-code" name="country-code">
+    						<option value="+256">Uganda (+256)</option>
+    						<option value="+254">Kenya (+254)</option>
+    						<option value="+255">Tanzania (+255)</option>
+    						<option value="+250">Rwanda (+250)</option>
+    						<div class="input-group">
+    							<i class="fa-solid fa-chevron-down"></i>
+    						</div>
+    					</select>
+    					<div class="input-group phone-input">
+    						<i class="fa-solid fa-phone"></i>
+    						<input type="tel" id="phone-number" name="phone-number" placeholder="0770000000" required>
+    					</div>
+    				</div>
+    				<p><small>Use an active phone number to receive notifications</small></p>
+
+    				<label for="Email">Email Address</label>
+    				<div class="input-group">
+    					<i class="fa-solid fa-envelope"></i>
+    					<input type="Email" id="Email" name="Email" placeholder="myemail@gmail.com" required>
+    				</div>
+    				<a href="https://account.google.com/sinup" class="helper-link">Don't have an email? Click to create<i class="fa-solid fa-circle-arrow-right"></i></a>
+
+    			</div>
+
+    			<div class="form-actions">
+    				<button type="button" class="btn-secondary">Close</button>
+    				<button type="submit" class="btn-primary"><i class="fa-solid fa-user-plus"></i>Create Account</button>
+    			</div>
+    		</form>
+    	</div>
+    </div>
+
+</body>
+</html>
